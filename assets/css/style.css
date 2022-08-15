@@ -1,0 +1,251 @@
+:root {
+  --main-bg: #EFE6E4;
+  --main-white: #ffffff;
+  --brown: #533738;
+  --beige: #8D7370;
+  --pink: #CC8B86;
+  --light-pink: #E2C4BA;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src:
+    local("Montserrat"),
+    local("Montserrat-Regular"),
+    url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src:
+    local("Montserrat Medium"),
+    local("Montserrat-Medium"),
+    url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: var(--brown);
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px;
+  background-color: var(--main-bg);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.title {
+  font-family: "Montserrat-Regular", Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn {
+  width: 72px;
+  height: 72px;
+  background-color: var(--pink);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.wrapper-header {
+  background-image: url('../img/main-bg.jpg');
+}
+
+.nav__link,
+.tel {
+  color: var(--brown);
+}
+
+.preview__title {
+  font-size: 50px;
+  line-height: 62px;
+}
+
+.preview__text {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.main-link {
+  color: var(--brown);
+  font-family: "Montserrat-Medium", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: var(--pink);
+  border: none;
+}
+
+.about__text {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.about__achievements {
+  background-color: var(--beige);
+}
+
+.achievements__list {
+  color: var(--main-white);
+}
+
+.achievements__number {
+  font-size: 50px;
+  line-height: 62px;
+}
+
+.achievements__text {
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.portfolio__title {
+  text-align: left;
+}
+
+.portfolio__preview {
+  color: var(--main-white);
+  background-image: url('../img/works1.jpg');
+}
+
+.portfolio__subtitle {
+  margin: 0;
+  font-family: "Montserrat-Medium", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+}
+
+.portfolio__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.portfolio__link {
+  display: block;
+  color: var(--brown);
+  text-align: center;
+  font-family: "Montserrat-Medium", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.team {
+  background-color: var(--light-pink);
+}
+
+.team__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.work {
+  background-color: var(--light-pink);
+}
+
+.work__list {
+  list-style: none;
+}
+
+.work__number {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  color: var(--main-white);
+  font-family: "Montserrat-Medium", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  background-color: var(--beige);
+  border-radius: 50%;
+}
+
+.work__text {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.slider__text {
+  font-size: 18px;
+  line-height: 30px;
+}
+.slider__author {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.request {
+  background-color: var(--beige);
+  color: var(--main-white);
+}
+
+.request__text {
+  font-size: 18px;
+  line-height: 30px;
+  opacity: 0.6;
+}
+
+.footer {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.footer__phone {
+  color: var(--brown);
+}
+
+
