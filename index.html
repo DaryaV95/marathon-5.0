@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="preload" href="assets/fonts/Montserrat-Medium.woff" as="font">
+    <link rel="preload" href="assets/fonts/Montserrat-Medium.woff2" as="font">
+    <link rel="preload" href="assets/fonts/Montserrat-Regular.woff" as="font">
+    <link rel="preload" href="assets/fonts/Montserrat-Regular.woff2" as="font">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>SCANDI</title>
 </head>
 <body>
@@ -41,8 +46,8 @@
       <section class="about" id="about-us">
         <h2 class="about__title title">О нас</h2>
         <div class="about__wrapper">
-          <img src="assets/img/about-us.jpg" alt="Красивое оформление стола: фаза с сухоцветами, бокалы и тарелки">
-          <p>Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.
+          <img class="about__img" src="assets/img/about-us.jpg" alt="Красивое оформление стола: фаза с сухоцветами, бокалы и тарелки">
+          <p class="about__text">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.
 
             Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать:
             « Да! Это именно то, что действительно достойно моего дома!»</p>
@@ -50,9 +55,9 @@
         </div>
         <div class="about__achievements achievements">
           <ul class="achievements__list">
-            <li class="achievements__item"><span>5</span><span>лет опыта</span></li>
-            <li class="achievements__item"><span>100</span><span>проектов</span></li>
-            <li class="achievements__item"><span>10</span><span>наград</span></li>
+            <li class="achievements__item"><span class="achievements__number">5</span><span class="achievements__text">лет опыта</span></li>
+            <li class="achievements__item"><span class="achievements__number">100</span><span class="achievements__text">проектов</span></li>
+            <li class="achievements__item"><span class="achievements__number">10</span><span class="achievements__text">наград</span></li>
           </ul>
         </div>
       </section>
@@ -61,14 +66,14 @@
         <article class="portfolio__article">
           <div class="portfolio__wrapper">
             <div class="portfolio__preview">
-              <h3>Квартира-студия 30 кв.м.</h3>
-              <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+              <h3 class="portfolio__subtitle">Квартира-студия 30 кв.м.</h3>
+              <p class="portfolio__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
             </div>
-            <img src="assets/img/works2.jpg" alt="Стильная светлая кухня с барной стойкой">
-            <img src="assets/img/works3.jpg" alt="Уютная гостинная с маленьким зеленым диваном и журнальным столиком">
-            <img src="assets/img/works4.jpg" alt="Ванная комната с глубокой ванной">
+            <img class="portfolio__img" src="assets/img/works2.jpg" alt="Стильная светлая кухня с барной стойкой">
+            <img class="portfolio__img" src="assets/img/works3.jpg" alt="Уютная гостинная с маленьким зеленым диваном и журнальным столиком">
+            <img class="portfolio__img" src="assets/img/works4.jpg" alt="Ванная комната с глубокой ванной">
           </div>
-          <a href="#">Смотреть ещё<img src="assets/icons/arrow-link.svg" alt=""></a>
+          <a class="portfolio__link" href="#">Смотреть ещё<img src="assets/icons/arrow-link.svg" alt=""></a>
         </article>
       </section>
       <section class="team" id="team">
@@ -120,12 +125,9 @@
             <button class="slider__btn btn btn-left"><img src="assets/icons/arrow-left.svg" alt=""></button>
             <div class="slider__cart">
               <blockquote class="slider__review">
-                <p class="slider__text">
-                  «Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
-
+                <p class="slider__text">«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
                   Работа шла быстро, было очень приятно общаться и взаимодествовать
                   с сотрудниками. Не ожидала, что это будет так легко!
-
                   Буду советовать и своим друзьям к вам обращаться!»</p>
               </blockquote>
               <cite class="slider__author">Анна Беловская</cite>
